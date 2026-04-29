@@ -466,17 +466,6 @@ function App() {
 
       <NFAGraph />
       <DFAGraph />
-
-      <footer>
-        2024{" · "}Copyleft (ɔ) Sirri Demirtas{" · "}
-        <a
-          href="https://github.com/sirridemirtas/nfa-to-dfa-converter"
-          target="_blank"
-          rel="noreferrer"
-        >
-          View project on GitHub ↗
-        </a>
-      </footer>
     </div>
   );
 }
