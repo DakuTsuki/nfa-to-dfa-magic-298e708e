@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef } from "react";
-import { Network } from "vis-network/standalone/esm/vis-network";
+import { Network } from "vis-network";
 import "vis-network/styles/vis-network.css";
 
 import { AppContext } from "../store/Context";
