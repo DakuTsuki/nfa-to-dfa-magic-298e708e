@@ -1,10 +1,20 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, GitBranch } from "lucide-react";
+import logo from "@/assets/szechenyi-logo.jpg";
+import SiteFooter from "@/components/SiteFooter";
 
 const Landing = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background via-background to-secondary">
-      <main className="flex-1 flex items-center justify-center px-6 py-16">
+      <header className="w-full px-6 py-5 flex justify-center sm:justify-start max-w-7xl mx-auto w-full">
+        <img
+          src={logo}
+          alt="Széchenyi University Győr logo"
+          className="h-14 md:h-16 w-auto object-contain"
+        />
+      </header>
+
+      <main className="flex-1 flex items-center justify-center px-6 py-10">
         <div className="max-w-3xl w-full text-center space-y-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-xs font-medium tracking-wide uppercase">
             <GitBranch className="w-3.5 h-3.5" />
@@ -12,9 +22,9 @@ const Landing = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-tight">
-            NFA <span className="text-muted-foreground">→</span> DFA
+            NFA <span className="text-accent">→</span> DFA
             <br />
-            <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Converter
             </span>
           </h1>
@@ -53,6 +63,8 @@ const Landing = () => {
           </div>
         </div>
       </main>
+
+      <SiteFooter />
     </div>
   );
 };
