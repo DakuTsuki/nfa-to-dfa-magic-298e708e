@@ -6,11 +6,11 @@ import SiteFooter from "@/components/SiteFooter";
 const Landing = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background via-background to-secondary">
-      <header className="w-full px-6 py-5 flex justify-center sm:justify-start max-w-7xl mx-auto w-full">
+      <header className="w-full px-6 py-8 flex justify-center">
         <img
           src={logo}
           alt="Széchenyi University Győr logo"
-          className="h-14 md:h-16 w-auto object-contain"
+          className="h-28 md:h-40 w-auto object-contain"
         />
       </header>
 
@@ -18,7 +18,7 @@ const Landing = () => {
         <div className="max-w-3xl w-full text-center space-y-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-xs font-medium tracking-wide uppercase">
             <GitBranch className="w-3.5 h-3.5" />
-            Automata Theory
+            Formal Language Automata
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-tight">
@@ -44,16 +44,16 @@ const Landing = () => {
           </div>
 
           <div className="pt-12 grid sm:grid-cols-2 gap-4 max-w-xl mx-auto">
-            <div className="p-5 rounded-xl border border-border bg-card text-left">
-              <div className="text-xs uppercase tracking-wider text-muted-foreground mb-1">
+            <div className="p-5 rounded-xl border border-primary/20 bg-primary/10 text-left">
+              <div className="text-xs uppercase tracking-wider text-primary mb-1">
                 Professor
               </div>
               <div className="font-semibold text-foreground">
                 Prof. Dr. Miklós Kuczmann
               </div>
             </div>
-            <div className="p-5 rounded-xl border border-border bg-card text-left">
-              <div className="text-xs uppercase tracking-wider text-muted-foreground mb-1">
+            <div className="p-5 rounded-xl border border-accent/20 bg-accent/10 text-left">
+              <div className="text-xs uppercase tracking-wider text-accent mb-1">
                 Course
               </div>
               <div className="font-semibold text-foreground">
