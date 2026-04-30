@@ -5,9 +5,9 @@ import SiteFooter from "@/components/SiteFooter";
 
 const Landing = () => {
   return (
-    <div className="h-screen flex flex-col bg-gradient-to-br from-background via-background to-secondary overflow-hidden">
-      <main className="flex-1 flex items-center justify-center px-4 py-3 min-h-0">
-        <div className="max-w-3xl w-full text-center flex flex-col items-center gap-3 md:gap-4">
+    <div className="min-h-screen md:h-screen flex flex-col bg-gradient-to-br from-background via-background to-secondary md:overflow-hidden">
+      <main className="flex-1 flex items-center justify-center px-4 py-4 min-h-0">
+        <div className="max-w-3xl w-full text-center flex flex-col items-center gap-2 md:gap-3">
           <img
             src={logo}
             alt="Széchenyi University Győr logo"
