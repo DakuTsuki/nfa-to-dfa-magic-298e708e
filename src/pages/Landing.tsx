@@ -45,7 +45,7 @@ const Landing = () => {
                 Professor
               </div>
               <div className="text-xs md:text-sm font-semibold text-foreground">
-                Prof. Dr. Miklós Kuczmann
+                Prof. Dr. Kallós Gábor
               </div>
             </div>
             <div className="p-3 md:p-4 rounded-xl border border-accent/20 bg-accent/10 text-left">
